@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "iyf": {
+      "title": "IYF",
+      "dropdown": {
+        "visionMission": "비전과 사명",
+        "history": "연혁",
+        "greetings": "인사말"
+      }
+    },
+    "programs": {
+      "title": "프로그램",
+      "dropdown": {
+        "introduction": "소개",
+        "globalEducation": "국제교육",
+        "socialService": "사회봉사",
+        "internationalExchange": "국제 교류 프로그램",
+        "culturalExchange": "문화 교류 프로그램"
+      }
+    },
+    "news": {
+      "title": "뉴스",
+      "dropdown": {
+        "localNews": "Local News",
+        "globalNews": "Global News"
+      }
+    },
+    "mindEducation": {
+      "title": "마음 교육",
+      "dropdown": {
+        "introduction": "소개",
+        "mindLecture": "Mind Lecture",
+        "contact": "연락처"
+      }
+    }
+  },
+  "languages": {
+    "en": "영어",
+    "hu": "헝가리어",
+    "es": "스페인어",
+    "ko": "한국어"
+  }
+}

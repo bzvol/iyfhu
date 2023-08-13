@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "iyf": {
+      "title": "IYF",
+      "dropdown": {
+        "visionMission": "Visión y Misión",
+        "history": "Historia",
+        "greetings": "Saludos"
+      }
+    },
+    "programs": {
+      "title": "Programas",
+      "dropdown": {
+        "introduction": "Introducción",
+        "globalEducation": "Educación Global",
+        "socialService": "Servicio Social",
+        "internationalExchange": "Intercambio Internacional",
+        "culturalExchange": "Intercambio Cultural"
+      }
+    },
+    "news": {
+      "title": "Noticias",
+      "dropdown": {
+        "localNews": "Local News",
+        "globalNews": "Global News"
+      }
+    },
+    "mindEducation": {
+      "title": "Educación",
+      "dropdown": {
+        "introduction": "Introducción",
+        "mindLecture": "Mind Lecture",
+        "contact": "Contacto"
+      }
+    }
+  },
+  "languages": {
+    "en": "Inglés",
+    "hu": "Húngaro",
+    "es": "Español",
+    "ko": "Coreano"
+  }
+}

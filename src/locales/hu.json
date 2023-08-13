@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "iyf": {
+      "title": "IYF",
+      "dropdown": {
+        "visionMission": "Vízió és küldetés",
+        "history": "Történelem",
+        "greetings": "Üdvözlet"
+      }
+    },
+    "programs": {
+      "title": "Programok",
+      "dropdown": {
+        "introduction": "Bemutatkozás",
+        "globalEducation": "Globális oktatás",
+        "socialService": "Szociális szolgáltatások",
+        "internationalExchange": "Nemzetközi csereprogram",
+        "culturalExchange": "Kulturális csereprogram"
+      }
+    },
+    "news": {
+      "title": "Hírek",
+      "dropdown": {
+        "localNews": "Helyi hírek",
+        "globalNews": "Globális hírek"
+      }
+    },
+    "mindEducation": {
+      "title": "Oktatás",
+      "dropdown": {
+        "introduction": "Bemutatkozás",
+        "mindLecture": "Mind Lecture",
+        "contact": "Kapcsolat"
+      }
+    }
+  },
+  "languages": {
+    "en": "Angol",
+    "hu": "Magyar",
+    "es": "Spanyol",
+    "ko": "Koreai"
+  }
+}

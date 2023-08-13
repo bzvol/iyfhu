@@ -1,0 +1,14 @@
+.App {
+    height: 100%;
+}
+
+.carousel {
+    height: 75vh;
+    border: 5px solid #4472c4;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    /*font-weight: bold;*/
+    text-align: center;
+    padding: 1rem;
+}
