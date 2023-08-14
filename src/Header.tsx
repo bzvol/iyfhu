@@ -1,4 +1,4 @@
-import './styles/Header.css';
+import './styles/Header.scss';
 import Navbar from "./Navbar";
 import {publicAsset} from "./utils";
 import {Menu as MenuIcon} from "@mui/icons-material";

@@ -1,4 +1,4 @@
-import './styles/Navbar.css'
+import './styles/Navbar.scss'
 import {useTranslation} from "react-i18next";
 import * as nbd from "./navbarData";
 import {ArrowDropDown} from "@mui/icons-material";

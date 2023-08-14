@@ -1,0 +1,138 @@
+.Nav {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+
+    &-item {
+        position: relative;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+
+        &:hover > .navbar__dropdown {
+            display: flex;
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        width: calc(100vw - 6px);
+
+        @include dropdown();
+
+        &-item {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: normal;
+            padding: .75rem 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e5e5e5;
+            }
+        }
+    }
+
+    &__lng {
+        position: relative;
+
+        &-img {
+            width: 2rem;
+        }
+
+        &__dropdown {
+            display: none;
+            min-width: calc(100vw - 6px);
+
+            @include dropdown();
+
+            &-icon {
+                font-size: 2rem !important;
+            }
+
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: .75rem 1rem;
+                font-size: 1.2rem;
+                color: black;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #e5e5e5;
+                }
+
+                &-img {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & > img {
+                        width: 1.75rem;
+                    }
+                }
+            }
+        }
+
+        &:hover > &__dropdown {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Nav {
+        flex: 1;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navbar {
+        flex-direction: row;
+        gap: 3rem;
+
+    }
+
+    .navbar__dropdown {
+        width: 12rem;
+    }
+
+    .navbar__lng__dropdown {
+        min-width: 12rem;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+
+@mixin dropdown($bg-color: white, $border: 3px solid var(--color-primary)) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: $bg-color;
+    border: $border;
+
+    flex-direction: column;
+}

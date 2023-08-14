@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {I18nextProvider} from "react-i18next";
 import i18n from "./i18n";
-import './styles/index.css';
+import './styles/index.scss';
 import App from './App';
 
 const root = ReactDOM.createRoot(

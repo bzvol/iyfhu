@@ -4,7 +4,7 @@
 
 .carousel {
     height: 75vh;
-    border: 5px solid #4472c4;
+    border: 5px solid var(--color-primary);
     display: grid;
     place-items: center;
     font-size: 1.5rem;

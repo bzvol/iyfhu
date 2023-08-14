@@ -1,4 +1,4 @@
-import './styles/AppFrame.css';
+import './styles/AppFrame.scss';
 import Header from './Header';
 
 export default function AppFrame({children}: {children: React.ReactNode}) {
