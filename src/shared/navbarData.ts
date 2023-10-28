@@ -1,5 +1,5 @@
-import i18n from './i18n';
-import {publicAsset} from "./utils";
+import i18n from '../i18n';
+import {publicAsset} from "../utils";
 
 export const data = {
     navItems: [
