@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="Header">
             <div className="Header-content-wrapper">
-                <img src={publicAsset("/images/iyfhu_logo_white.png")} alt="IYF logo"
+                <img src="http://34.128.168.249/iyfhu_logo_white.png" alt="IYF logo"
                      className="logo"/>
                 <MenuIcon className="navbar__toggle" onClick={() => setNavbarOpen(prev => !prev)}/>
                 {navbarOpen && <Navbar/>}

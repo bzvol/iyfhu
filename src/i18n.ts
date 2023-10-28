@@ -20,6 +20,6 @@ i18n
             escapeValue: false,
         },
     })
-    .then(r => console.info('I18N initialized.'));
+    .then(() => console.info('I18N initialized.'));
 
 export default i18n;

@@ -1,3 +1,22 @@
-.Carousel {
+$headerHeight: 5rem;
+$headerHeightDesktop: 6rem;
 
+.Carousel {
+    width: 100%;
+    height: calc(100vh - $headerHeight);
+    display: flex;
+    overflow: hidden;
+
+    & img {
+        min-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Carousel {
+        height: calc(100vh - $headerHeightDesktop);
+    }
 }
