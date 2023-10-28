@@ -11,9 +11,12 @@ export default function Header() {
 
     return (
         <header className="Header">
-            <img src={publicAsset("/images/iyfhu_logo.png")} alt="IYF logo" className="logo" />
-            <MenuIcon className="navbar__toggle" onClick={() => setNavbarOpen(prev => !prev)}/>
-            {navbarOpen && <Navbar/>}
+            <div className="Header-content-wrapper">
+                <img src={publicAsset("/images/iyfhu_logo.png")} alt="IYF logo"
+                     className="logo"/>
+                <MenuIcon className="navbar__toggle" onClick={() => setNavbarOpen(prev => !prev)}/>
+                {navbarOpen && <Navbar/>}
+            </div>
         </header>
     );
 }
