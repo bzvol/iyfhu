@@ -12,6 +12,22 @@ $headerHeightDesktop: 6rem;
         height: auto;
         object-fit: cover;
         object-position: top center;
+
+        &.active {
+            animation-name: slide;
+            animation-duration: var(--transition-time);
+            animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
