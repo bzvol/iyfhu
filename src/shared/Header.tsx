@@ -1,6 +1,6 @@
 import './styles/Header.scss';
 import Navbar from "./Navbar";
-import {publicAsset} from "../utils";
+import {cdnAsset, publicAsset} from "../utils";
 import {Menu as MenuIcon} from "@mui/icons-material";
 import {useState} from "react";
 import {useMediaQuery} from "@mui/material";
@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="Header">
             <div className="Header-content-wrapper">
-                <img src="http://34.128.168.249/iyfhu_logo_white.png" alt="IYF logo"
+                <img src={cdnAsset("iyfhu_logo_white.png")} alt="IYF logo"
                      className="logo"/>
                 <MenuIcon className="navbar__toggle" onClick={() => setNavbarOpen(prev => !prev)}/>
                 {navbarOpen && <Navbar/>}

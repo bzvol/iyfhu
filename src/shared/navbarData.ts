@@ -1,4 +1,5 @@
 import i18n from '../i18n';
+import {cdnAsset} from "../utils";
 
 export const data = {
     navItems: [
@@ -41,5 +42,5 @@ export const data = {
 
 export const getTitleTranslationKey = (key: string) => `navbar.${key}.title`
 export const getDropdownTranslationKey = (key: string, subKey: string) => `navbar.${key}.dropdown.${subKey}`
-export const getLanguageImageUri = (key: string) => `http://34.128.168.249//lang_${key}.png`
+export const getLanguageImageUri = (key: string) => cdnAsset(`lang_${key}.png`)
 export const getLanguageTranslationKey = (key: string) => `languages.${key}`
