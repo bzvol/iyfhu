@@ -1,6 +1,6 @@
 import './styles/Header.scss';
 import Navbar from "./Navbar";
-import {cdnAsset, publicAsset} from "../utils";
+import {cdnAsset} from "../utils";
 import {Menu as MenuIcon} from "@mui/icons-material";
 import {useState} from "react";
 import {useMediaQuery} from "@mui/material";

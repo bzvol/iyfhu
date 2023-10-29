@@ -2,7 +2,7 @@
 // noinspection HtmlRequiredAltAttribute
 
 import './styles/Carousel.scss';
-import {RefObject, useEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 interface CarouselProps {
     images: Array<{

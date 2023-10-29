@@ -28,7 +28,7 @@ $logoSize: 3rem;
 .navbar__toggle {
     font-size: 2.5rem !important;
     position: absolute;
-    top: $logoSize / 2;
+    top: calc($logoSize / 2);
     right: 0;
     transform: translateY(-50%);
     cursor: pointer;
