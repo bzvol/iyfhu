@@ -1,7 +1,15 @@
 import i18n from '../i18n';
 import {cdnAsset} from "../utils";
 
-export const data = {
+interface NavbarData {
+    navItems: Array<{
+        key: string,
+        dropdownKeys: string[],
+    }>,
+    availableLngs: string[],
+}
+
+export const data: NavbarData = {
     navItems: [
         {
             key: 'iyf',
