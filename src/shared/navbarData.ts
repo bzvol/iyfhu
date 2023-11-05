@@ -45,7 +45,7 @@ export const data: NavbarData = {
             ],
         },
     ],
-    availableLngs: Object.keys(i18n.options.resources),
+    availableLngs: Object.keys(i18n.options.resources ?? {}),
 }
 
 export const getTitleTranslationKey = (key: string) => `navbar.${key}.title`
