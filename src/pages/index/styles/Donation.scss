@@ -1,0 +1,69 @@
+.Donation {
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Donation__title {
+    font-size: 2.5rem;
+}
+
+.Donation__amount-group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Donation__amount {
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+    background: white;
+    border: .25rem solid var(--color-primary);
+    border-radius: .75rem;
+    cursor: pointer;
+    // TODO: format amounts to X,XXX,XXX
+
+    &.selected {
+        background: var(--color-primary);
+        color: white;
+    }
+}
+
+.Donation__donate-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: .75rem;
+
+    &:disabled {
+        cursor: default;
+        user-select: none;
+        filter: contrast(0.75);
+    }
+
+    &:not(:disabled) {
+        &:hover {
+            filter: brightness(0.95);
+        }
+    
+        &:active {
+            filter: brightness(0.85);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Donation__amount-group {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
